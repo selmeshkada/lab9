@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleform.css">
+    <title>О калькуляторе</title>
+</head>
+
+<body>
+    <header>
+        <div class="title">Калькулятор расчёта ткани
+            <nav>
+                <a href="index.html" target="_blank">Вернуться на главную</a>
+                <a href="#">Оплата и доставка</a>
+                <a href="#">Контакты</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Выберите количество минут</legend>
+                <div class="check">
+                    <label>
+                        <input type="checkbox" name="checked" value="1"><span>1</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checked" value="2"><span>2</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checked" value="3"><span>3</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checked" value="4"><span>4</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checked" value="5"><span>5</span>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Личные данные</legend>
+
+                <div class="form-group-required">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" placeholder="Ваше имя" autocomplete="off" required>
+                </div>
+
+                <div class="form-group-required">
+                    <label for="date_of_birth">Дата рождения</label>
+                    <input type="date" id="date_of_birth" name="date_of_birth" placeholder="Год-месяц-день"
+                        autocomplete="off" required>
+                </div>
+
+                <div class="form-group-notrequired">
+                    <label for="gender">Пол</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Мужской</option>
+                        <option value="female">Женский</option>
+                    </select>
+                </div>
+
+                <div class="form-group-required">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" placeholder="00000000" autocomplete="off"
+                        required>
+                </div>
+
+                <div class="form-group-notrequired">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Адрес электронной почты"
+                        autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+79999999999" autocomplete="off">
+                </div>
+
+                <div class="form-group-notrequired">
+                    <label for="time_preference">Удобный интервал для связи</label>
+                    <select id="time_preference" name="time_preference">
+                        <option value="morning">Утро</option>
+                        <option value="day">День</option>
+                        <option value="evening">Вечер</option>
+                        <option value="night">Ночь</option>
+                    </select>
+                </div>
+            </fieldset>
+            <button type="submit"><i class="fa fa-user"></i> Зарегистрироваться</button>
+        </form>
+        <form action="https://yandex.ru/search/" method="get">
+            <label for="query">Введите ваш запрос:</label>
+            <input type="text" id="query" name="q" autocomplete="off" disabled>
+            <button type="submit">Найти</button>
+        </form>
+    </main>
+    <img class="pug" src="C:\Users\user\Desktop\html-css\Лабораторные\Лаб1\лаб9\images\pug.png" alt="pug">
+    <ul>
+        <li>
+            <p>Lorem ipsum dolor sit.</p>
+        </li>
+        <li>
+            <p>Nulla, error excepturi. Natus!</p>
+        </li>
+        <li>
+            <p>Ullam maxime minima corporis.</p>
+        </li>
+        <li>
+            <p>Itaque, eveniet. Dolor, laudantium?</p>
+        </li>
+        <li>
+            <p>Quisquam maxime animi consectetur.</p>
+        </li>
+    </ul>
+    <div class="type">
+        <p>Если вы хотите связаться:</p>
+        <p>Если вы хотите связаться:</p>
+        <p id="not">Если вы хотите связаться:</p>
+        <p>Если вы хотите связаться:</p>
+        <p>Если вы хотите связаться:</p>
+        <p>Если вы хотите связаться:</p>
+        <ol>
+            <li><a href="https://e.mospolytech.ru/#/home">Личный кабинет</a></li>
+            <li><a id="Telegram" href="https://t.me/Selmeshki">Telegram</a></li>
+            <li><a href="https://vk.com/feed">VK</a></li>
+        </ol>
+    </div>
+</body>
+
+<footer>
+    Процесс вычислений значительно ускорит калькулятор, но помните, что он не учтет особенности фигуры,
+    фактуру материала. Чтобы не купить лишнее полотно, вы можете позвонить нашим специалистам. <a
+        href="tel:+79626299635" title="Телефон">+79626299635</a>
+    <a href="mailto:daramineeva345@gmail.com">daramineeva345@gmail.com</a>
+</footer>

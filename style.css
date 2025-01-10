@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+html {
+    scroll-behavior: smooth;
+    background-image: url("images/back.jpg");
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    display: flex;
+    line-height: 5em;
+    position: relative;
+    width: 100%;
+    background: rgb(113, 116, 185);
+    padding-left: 50px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: aliceblue;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.title nav a {
+    color:aliceblue;
+    max-width: fit-content;
+    min-height: fit-content;
+    margin: 1em;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a:hover {
+    color: rgb(48, 47, 56);
+    transition-duration: 1s;
+    border: 4px solid forestgreen;
+}
+
+[cite="Подзаголовок"],  #подзаголовок{
+    color: rgb(47, 58, 110);
+    font-size: larger;
+}
+
+#подзаголовок {
+    font-weight: bold;
+}
+
+.container_images {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-auto-flow: row dense;
+    gap: 5px;
+}
+
+.links > a {
+    color: aliceblue;
+}
+
+h3 + ol {
+    color: rgb(255, 7, 7);
+}
+
+.math > ol {
+    color:blue;
+}
+
+p:active {
+    color: green;
+}
+
+.abzac {
+    line-height: 30px;
+    text-align: right;
+}
+
+#mel {
+    text-align: center;
+    font-style: italic;
+    color:aliceblue;
+    background-color: rgb(113, 116, 185);
+}
+
+a {
+    text-decoration: none;
+}
+
+.on ~ .to {
+    color: brown;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+div[attr="boxone"] {
+    margin: 3em;
+    box-sizing: border-box;
+    width: 500px;
+    height: 150px;
+    padding: 10px;
+    border: 5px solid rgb(113, 116, 185);
+    position: absolute;
+    left: 800px;
+    top: 780px;
+}
+
+div[attr="boxtwo"]{
+    background-color: #FFFFFF;
+    color: #000000;
+    position: fixed;
+    left: 6%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 40px;
+    font-size: 18px;
+    z-index: -1;
+}
+
+html, body { height: 100%;}
+
+body > footer {
+  position: sticky;
+  top: 100vh;
+}
+
+section {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.card {
+    width: 200px;
+    border: #0f2d4c solid 2px;
+    border-radius: 2%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-self: last baseline;   
+}
+
+#load:hover #cart {
+    opacity: 1;
+}
+
+#load:hover #zagr {
+    opacity: 0;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#cart {
+    opacity: 0;
+    transition: opacity 10s;
+    position: absolute;
+    margin-bottom: 40px;
+    z-index: 1;
+    max-width: 230px;
+}
+
+#zagr {
+    opacity: 1;
+    transition: opacity 5s;
+    animation: spin 5s infinite;
+    width: 32px;
+    height: 32px;
+    margin-top: 50%;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 50%;
+    margin-bottom: 50%;
+}
+
+@keyframes move {
+    0% { transform: scale(1); }
+    50% {transform: scale(1.2)}
+    100% { transform: scale(1.5); }
+}
