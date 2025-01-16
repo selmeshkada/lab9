@@ -1,7 +1,7 @@
 html {
     scroll-behavior: smooth;
     background-image: url("images/back.jpg");
-    background-attachment:fixed;
+    background-attachment: fixed;
     font-family: 'Raleway', sans-serif;
     max-width: fit-content;
 }
@@ -32,8 +32,8 @@ nav {
     gap: 20px;
 }
 
-nav a{
-    color:antiquewhite;
+nav a {
+    color: antiquewhite;
     background-color: #5b58ff;
     border: 2px solid rgb(42, 42, 43);
 }
@@ -237,9 +237,6 @@ input:disabled {
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
-.pug:hover{
+.pug:hover {
     background-color: rgb(84, 63, 204);
 }
-
-
-

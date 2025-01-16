@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 html {
     scroll-behavior: smooth;
     background-image: url("images/back.jpg");
@@ -24,7 +25,7 @@ header {
 }
 
 .title nav a {
-    color:aliceblue;
+    color: aliceblue;
     max-width: fit-content;
     min-height: fit-content;
     margin: 1em;
@@ -45,7 +46,8 @@ nav a:hover {
     border: 4px solid forestgreen;
 }
 
-[cite="Подзаголовок"],  #подзаголовок{
+[cite="Подзаголовок"],
+#подзаголовок {
     color: rgb(47, 58, 110);
     font-size: larger;
 }
@@ -62,16 +64,16 @@ nav a:hover {
     gap: 5px;
 }
 
-.links > a {
+.links>a {
     color: aliceblue;
 }
 
-h3 + ol {
+h3+ol {
     color: rgb(255, 7, 7);
 }
 
-.math > ol {
-    color:blue;
+.math>ol {
+    color: blue;
 }
 
 p:active {
@@ -86,7 +88,7 @@ p:active {
 #mel {
     text-align: center;
     font-style: italic;
-    color:aliceblue;
+    color: aliceblue;
     background-color: rgb(113, 116, 185);
 }
 
@@ -94,7 +96,7 @@ a {
     text-decoration: none;
 }
 
-.on ~ .to {
+.on~.to {
     color: brown;
 }
 
@@ -116,7 +118,7 @@ div[attr="boxone"] {
     top: 780px;
 }
 
-div[attr="boxtwo"]{
+div[attr="boxtwo"] {
     background-color: #FFFFFF;
     color: #000000;
     position: fixed;
@@ -128,11 +130,14 @@ div[attr="boxtwo"]{
     z-index: -1;
 }
 
-html, body { height: 100%;}
+html,
+body {
+    height: 100%;
+}
 
-body > footer {
-  position: sticky;
-  top: 100vh;
+body>footer {
+    position: sticky;
+    top: 100vh;
 }
 
 section {
@@ -150,7 +155,7 @@ section {
     border-radius: 2%;
     flex-grow: 1;
     flex-shrink: 1;
-    align-self: last baseline;   
+    align-self: last baseline;
 }
 
 #load:hover #cart {
@@ -162,8 +167,13 @@ section {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 #cart {
@@ -189,7 +199,15 @@ section {
 }
 
 @keyframes move {
-    0% { transform: scale(1); }
-    50% {transform: scale(1.2)}
-    100% { transform: scale(1.5); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2)
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
 }

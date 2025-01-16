@@ -60,17 +60,18 @@ h1 {
 
 @keyframes circle-to-square {
     from {
-      width: 50px;
-      height: 50px;
-      background-color: #F498AD;
+        width: 50px;
+        height: 50px;
+        background-color: #F498AD;
     }
+
     to {
-      width: 200px;
-      height: 200px;
-      background-color: #2E9AFF;
+        width: 200px;
+        height: 200px;
+        background-color: #2E9AFF;
     }
-  }
-  
+}
+
 
 .child-one {
     width: 50px;
@@ -78,7 +79,7 @@ h1 {
     background-color: #F498AD;
     border-radius: 25px;
 }
-  
+
 .child-one:hover {
     animation-name: circle-to-square;
     animation-duration: 0.6s;
